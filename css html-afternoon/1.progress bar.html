@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            #box{
+                width: 100px;
+                height: 50px;
+                background-color: brown;
+                animation-name: changecolor;
+                animation-duration:5s;
+                animation-iteration-count: 2;
+            }
+            @keyframes  changecolor {
+                from{
+                    background-color: brown;
+                }
+                to{
+                    background-color: chartreuse;
+                }
+            }
+            #movingbox{
+                position: relative;
+                height: 50px;
+                width: 100px;
+                animation-name: loader ;
+                animation-duration: 10s;
+            }
+            <?--@keyframes loader {
+                0%{
+                    background-color: red;
+                    left:0px;
+                    top:0px
+                }
+                25%{
+                    background-color: red;
+                    left:100px;
+                    top:0px;
+                }
+                60%{
+                    background-color:red;
+                    left: 200px;
+                    top:0px;
+                }
+                75%{
+                    background-color: red;
+                    left: 300px;
+                    top:0px;
+                }
+                100%{
+                    background-color: red;
+                    left:400px;
+                    top:0px
+                }
+            }-->
+			@keyframes loader {
+			0% {width: 0%;left:0;right:0;background-color:red;}
+			99% { width: 100%;left:0;right:0;background-color:red;} 
+			}
+        </style>
+    </head>
+    <body>
+        <div id="movingbox"></div>
+    </body>
+</html>
