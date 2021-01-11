@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<h1>Addition:</h1>
+<input type="text" id="txt1"/>
+<input type="text" id="txt2"/>
+<p id="demo"><p>
+<button onclick="Fun()">ADD</button>
+
+<script>
+function Fun() {
+   var y = document.getElementById("txt1").value;
+  var z = document.getElementById("txt2").value;
+  var x = (+y) + (+z);
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
