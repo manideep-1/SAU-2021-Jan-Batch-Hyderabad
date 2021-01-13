@@ -1,0 +1,25 @@
+<div>
+    <div class="container">
+      <div class="row">
+        <h2>API GET details displaying in table</h2>
+      </div>
+      <div class="row">
+        <table class="table">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">username</th>
+            <th scope="col">phone</th>
+            <th scope="col">website</th>
+          </tr>
+          <tr *ngFor="let user of apiRecords;">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
