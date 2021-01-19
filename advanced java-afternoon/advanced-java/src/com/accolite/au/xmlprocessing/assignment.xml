@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<assignments>
+    <assignment >
+        <name>advanced_java</name>
+        <statusupdate>in progress</statusupdate>
+	<prg_language>java</prg_language>
+    </assignment>
+    <assignment >
+        <name>java_basics</name>
+        <statusupdate>in progress</statusupdate>
+	<prg_language>java</prg_language>
+    </assignment>
+	<assignment >
+        <name>react native</name>
+        <statusupdate>submitted</statusupdate>
+	<prg_language>javascript</prg_language>
+    </assignment>
+</assignments>

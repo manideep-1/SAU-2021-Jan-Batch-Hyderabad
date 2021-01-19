@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+E:\Accolite training\day 8\Advanced Java afternoon\advanced-java\.metadata\.plugins\org.eclipse.jdt.core
+3957817662.index
+389473148.index
+2046885905.index
+3249453152.index
+3292521893.index

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_271">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/Accolite training/day 8/Advanced Java afternoon/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manideep/Downloads/commons-csv-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manideep/Downloads/jaxb-api-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manideep/Downloads/jaxp-api-1.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manideep/Downloads/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manideep/Downloads/jaxb-api-2.4.0-b180830.0359.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
