@@ -39,7 +39,11 @@ public class UserServiceImpl implements UserService{
         
 		return bCryptPasswordEncoder.encode(plainPassword);
     }
-
+	@Override
+	public void updateUser(User u) {
+		// TODO Auto-generated method stub
+		
+	}
 	@Override
 	public User getUserById(Integer id) {
 		// TODO Auto-generated method stub
@@ -67,4 +71,6 @@ public class UserServiceImpl implements UserService{
 		userRepository.deleteById(id);
 		
 	}
+
+	
 }

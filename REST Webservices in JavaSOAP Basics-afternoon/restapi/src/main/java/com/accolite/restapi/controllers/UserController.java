@@ -3,6 +3,7 @@ package com.accolite.restapi.controllers;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 //import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -44,7 +46,16 @@ public class UserController {
 		return u1;
 	}
 	@PutMapping("/put")
-	public User saveOrUpdateuser(@RequestBody User u) {
+	public ResponseEntity<Object> saveOrUpdateuser(@RequestBody User user,@RequestHeader("password") String password) {
+	
+		User user1=userservice.getUserById(user.getId());
+		if(bCryptPasswordEncoder.matches(password, user1.getPassword())) {
+			userservice.updateUser(user);
+	    }
+		else
+		{
+			return ResponseEntity.ok("Invalid password");
+		}
 //		System.out.println(userDetails);
 //		String emailId=userDetails.get("emailId");
 //		String password=userDetails.get("password");
@@ -53,9 +64,10 @@ public class UserController {
 //		u1.setPassword(password);
 		
 		//send it to service
-		userservice.addUser(u);
 		
-		return u;
+		
+		
+		return ResponseEntity.ok(user);
 	}
 //	@PutMapping("/changeemail")
 //	public ResponseEntity<Object> ChangeEmail(@RequestBody Map<String,String> userDetails) {
