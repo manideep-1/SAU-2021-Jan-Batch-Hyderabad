@@ -1,0 +1,27 @@
+1) CWE
+Common Weakness Enumeration (CWE) list identifies software security weaknesses in software and hardware. This includes C, C++, and Java. The list is compiled by feedback from the CWE Community.
+Sponsored by the MITRE Corporation, the community is made up of representatives from major operating systems vendors, commercial information security tool vendors, academia, government agencies, and research institutions.
+
+The full list is regularly updated every few months with the latest version released in August 2020. The security weakness list includes over 600 categories, which include:
+1.Buffer overflow
+2.Cross-site scripting
+3.Insecure random number
+
+
+2) OWASP Top 10
+Cybersecurity attacks are rising, which is why it's important to use secure software practices — like OWASP and the OWASP Top 10 — to help safeguard your code against software security vulnerabilities. Here, we explain what is OWASP and what are the OWASP Top 10 vulnerabilities.
+The OWASP Top 10 is the most well-known resource that the organization produces. Each year, a team of security experts from across the globe updates the report. This report features the 10 most critical web application and API security risks.
+
+
+3) CERT
+CERT is a secure coding standard that supports commonly used programming languages such as C, C++, and Java. In addition, for each guideline included in the secure coding standard, there is a risk assessment to help determine the possible consequences of violating that specific rule or recommendation.
+The standards are developed through a broad-based community effort by members of the software development and software security communities.
+
+The rules and recommendations target insecure coding practices and undefined behaviors that lead to security risks.
+
+The latest rules and recommendations are available on the secure coding standard's website and are also periodically published: C and C++ in 2016 and Java in 2011.
+4) SANS 25
+SANS Top 25 is a list of the Common Weakness Enumeration's (CWE) most dangerous software errors. These are errors that can result in severe vulnerabilities that can allow attackers to steal data, completely take over applications, or prevent them from working completely.
+The list is based on Common Vulnerabilities and Exposures (CVE) data, information from the National Vulnerability Database (NVD) and from the Common Vulnerability Scoring System (CVSS). Contributors range from across the software industry.
+
+When creating a new scan in Netsparker Standard, you can select the SANS Top 25 Checks scan policy from the Scan Policy dropdown in the Start a New Website or Web Service Scan dialog. This ensures that Netsparker scans for these vulnerabilities.
